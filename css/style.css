@@ -166,12 +166,29 @@ h5 {
     margin-right: auto;
 }
 
+.stats-svg {
+    filter: invert(56%) sepia(43%) saturate(4643%) hue-rotate(3deg) brightness(107%) contrast(101%);
+}
+
+.row {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+}
 .card {
     background: none;
+    --bs-card-border-color: none;
 }
 
 .card-body {
     background: #202029;
+}
+
+.card-body p {
+    color: #e7e7e7;
+    font-size: medium;
+    margin-top: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
 }
 
 #footer {

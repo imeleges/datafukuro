@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header class="navbar">
         <div class="align-items-center">
-            <a class="logo" href="index.html"><img class="logo_img" src="images/logo.png" alt="Logo"> Data Fukuro</a>
+            <a class="logo" href="/index.html"><img class="logo_img" src="/images/logo.png" alt="Logo"> Data Fukuro</a>
         </div>
     
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Projects</a>
@@ -35,13 +35,13 @@
         </ul>
     </header>
 
-    <main class="container-fluid under_construction_middle">
-        <div class="row d-flex text-center">
+    <main class="container-fluid">
+        <div class="row">
             <!-- Sidebar -->
-            <div class="col-lg-5 col-md-5 mx-auto">
-                <div class="justify-content-center">
+            <div class="col-lg-3 col-md-4" id="sidebar">
+                <div class="avatar justify-content-center">
                     <div class="text-center">
-                        <img src="images/hello.png" alt="Greetings image" class="rounded-circle">
+                        <img src="/images/hello.png" alt="Greetings image" class="rounded-circle">
                         <h4>Eugene Popov</h4>
                         <span class="sidebar-caption">Data Analyst & Scientist</span>
                     </div>
@@ -70,18 +70,122 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="sidebar-info">
                     <p class="text-centre ">
                         <i class="bi bi-geo-alt"></i> Dubai, United Arab Emirates <br>
                         <i class="bi bi-linkedin"></i> <a href="#" alt="LinkedIn">LinkedIn</a>
                         <i class="bi bi-dot"></i> <i class="bi bi-telegram"></i> <a href="#" alt="Telegram">Telegram</a>
                         <i class="bi bi-dot"></i> <i class="bi bi-envelope-at"></i> <a href="#" alt="Email">Email</a>
                     </p>
+
+                    <h6>SPOKEN LANGUAGES</h6>
+                    <p>
+                        <i class="bi bi-translate _FB8500"></i> English <i class="bi bi-dot"></i> Russian
+                    </p>
+
+                    <h6>TECH STACK & SOFTWARE</h6>
+                    <p>
+                        <i class="bi bi-bar-chart-line _FB8500"></i> Data Visualization: <br>
+                        <i class="bi bi-dot"></i> Tableau, Superset, Looker Studio, PowerBI, Excel, Google Sheets, Apple
+                        Numbers<br>
+
+                        <i class="bi bi-database _FB8500"></i> Database Management: <br>
+                        <i class="bi bi-dot"></i> SQL, MySQL, PostgreSQL, BigQuery<br>
+
+                        <i class="bi bi-code-square _FB8500"></i> Languages & Tools: <br>
+                        <i class="bi bi-dot"></i>Python, PyCharm, VS Code, Jupyter, GiHub, Docker<br>
+
+                        <i class="bi bi-robot _FB8500"></i> Machine Learning: <br>
+                        <i class="bi bi-dot"></i> Applied Machine Learning
+                    </p>
+
+                    <h6>KNOWLEDGE & SKILLS</h6>
+                    <p>
+                        <i class="bi bi-bar-chart-line _FB8500"></i> Technical: <br>
+                        <i class="bi bi-dot"></i> Data Collection, Query Writing, Data Cleaning, Data Analysis,
+                        Analytics, EDA, Dashboard, Business Intelligence (BI), Visualization <br>
+
+                        <i class="bi bi-bar-chart-line _FB8500"></i> Non-technical: <br>
+                        <i class="bi bi-dot"></i> Problem Solving, Insight Generation, Communication, Project
+                        Management, Presentation
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/banner_70.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Four columns -->
+                <div class="row stats">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <p><img src="/images/vscode-original.svg" width="25" height="25"> VS Code</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <p><img src="/images/python-original.svg" width="25" height="25"> Python</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <p><img src="/images/bitbucket-original.svg" width="25" height="25"> Bitbucket</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <p><img src="/images/jupyter-original-wordmark.svg" width="25" height="25"> Jupyter</p>
+                    </div>
+                </div>
+
+                <!-- Main content blocks -->
+                <!-- <h3><i class="bi bi-check2-square"></i> Latest work:</h3> -->
+                <div class="row"> 
+                    <!-- col-lg-6 col-md-12 col-sm-12 -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <a href="#"><h3>Dubai Tetancy Lookup</h3></a>
+                                <a href="#"><img src="/projects/dtl/dtl_projectcover.png" class="img-fluid" alt="..."></a>
+                                <p>Dubai Tenancy Lookup is a Python and Streamlit app that utilizes open data from the Dubai Land Department to provide renters in the Marsa Dubai area with property information, rental price history, and comparisons to similar properties in the same building.</p>
+                                <p>The app features a user-friendly interface and provides valuable insights to empower renters to make informed decisions about their rental contracts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <a href="#"><h3>29 BD BLVD</h3></a>
+                                <a href="#"><img src="/projects/29blvd/29blvd_projectcover.png" class="img-fluid" alt="..."></a>
+                                <p>29 BD BLVD is a Tableau-based visualisation dashboard project that focuses on the 29 Boulevard building complex built by EMAAR in downtown Dubai.</p>
+                                <p>The interactive dashboard provides an easy-to-use visual representation of each floor and apartment type, including size, number, and color-coded apartment types. It's a valuable resource for anyone interested in investing or renting in the area.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <a href="#"><h3>REMA Dubai</h3></a>
+                                <a href="#"><img src="/projects/rema_dubai/remadubai_projectcover.png" class="img-fluid" alt="..."></a>
+                                <p>REMA Dubai is a real estate market analysis project that includes a Tableau visualization dashboard based on a dataset of over 4,800 rental listings in Dubai's Downtown and DIFC areas. The dashboard features color-coded apartments by room type, median prices, and various features such as AC and furnishings.</p>
+                                <p>The dashboard also displays top towers based on different criteria and a map of buildings in the two districts, providing valuable insights for anyone interested in the Dubai rental market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <a href="#"><h3>UAE Population</h3></a>
+                                <a href="#"><img src="/projects/uae_population/uaepopulation_projectcover.png" class="img-fluid" alt="..."></a>
+                                <p>The UAE Population project is a Tableau-based visualization dashboard that displays the population of the United Arab Emirates from 1960 to 2021 by gender and age group, based on data from the United Nations World Population Prospects.</p>
+                                <p>The user-friendly dashboard features a filter slider for selecting different year ranges and three charts displaying the population of three different age groups, making it a valuable resource for anyone interested in the UAE's demographic trends.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <footer id="footer">
+       <i class="bi bi-c-circle"></i> 2023 Data Fukuro <img src="/images/happyface.png" alt="Logo" width="30" height="30"> Eugene Popov
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
@@ -91,6 +195,6 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
-
 </body>
+
 </html>
