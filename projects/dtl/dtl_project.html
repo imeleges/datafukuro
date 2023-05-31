@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <!-- <header class="navbar">
         <div class="align-items-center">
             <a class="logo" href="/index.html"><img class="logo_img" src="/images/logo.png" alt="Logo"> Data Fukuro</a>
         </div>
@@ -40,7 +40,15 @@
                 <a class="nav-link" href="#">About</a>
             </li>
         </ul>
-    </header>
+    </header> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $("#navbar").load("/navbar.html"); 
+        });
+    </script> 
+
+    <div id="navbar"></div> <!-- This will be replaced by your navbar -->
 
     <main class="container-fluid">
         <div class="row">
@@ -226,6 +234,7 @@
                     </div>
                 </div>
             </div>
+            <!-- END MAIN CONTENT-->
         </div>
     </main>
 
