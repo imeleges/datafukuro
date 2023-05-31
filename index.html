@@ -21,105 +21,33 @@
     <meta property="og:image" content="https://datafukuro.com/images/logo.png">
     <meta property="og:url" content="https://datafukuro.com/">
     <meta property="og:type" content="website">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
     
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="align-items-center">
-            <a class="logo" href="/index.html"><img class="logo_img" src="/images/logo.png" alt="Logo"> Data Fukuro</a>
-        </div>
-    
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-        </ul>
-    </header>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
 
     <main class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
-            <div class="col-lg-3 col-md-4" id="sidebar">
-                <div class="avatar justify-content-center">
-                    <div class="text-center">
-                        <img src="/images/hello.png" alt="Greetings image" class="rounded-circle">
-                        <h4>Eugene Popov</h4>
-                        <span class="sidebar-caption">Data Analyst & Scientist</span>
-                    </div>
-                </div>
-
-                <div class="progress-stacked">
-                    <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                        <div class="progress-bar" style="background-color: #8ECAE6;"></div>
-                    </div>
-                    <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                        <div class="progress-bar" style="background-color: #219EBC;"></div>
-                    </div>
-                    <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                        <div class="progress-bar" style="background-color: #023047;"></div>
-                    </div>
-                    <div class="progress" role="progressbar" aria-label="Segment four" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                        <div class="progress-bar" style="background-color: #FFB703;"></div>
-                    </div>
-                    <div class="progress" role="progressbar" aria-label="Segment five" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                        <div class="progress-bar" style="background-color: #FB8500;"></div>
-                    </div>
-                </div>
-
-                <div class="sidebar-info">
-                    <p class="text-centre ">
-                        <i class="bi bi-geo-alt"></i> Dubai, United Arab Emirates <br>
-                        <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/eugene--popov/" alt="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
-                        <i class="bi bi-dot"></i> <i class="bi bi-telegram"></i> <a href="https://t.me/datafukuro" alt="Telegram" target="_blank" rel="noopener">Telegram</a>
-                        <i class="bi bi-dot"></i> <i class="bi bi-github"></i> <a href="https://github.com/imeleges" alt="GitHub">GitHub</a>
-                    </p>
-
-                    <h6>SPOKEN LANGUAGES</h6>
-                    <p>
-                        <i class="bi bi-translate _FB8500"></i> English <i class="bi bi-dot"></i> Russian
-                    </p>
-
-                    <h6>TECH STACK & SOFTWARE</h6>
-                    <p>
-                        <i class="bi bi-bar-chart-line _FB8500"></i> Data Visualization: <br>
-                        <i class="bi bi-dot"></i> Tableau, Superset, Looker Studio, PowerBI, Excel, Google Sheets, Apple
-                        Numbers<br>
-
-                        <i class="bi bi-database _FB8500"></i> Database Management: <br>
-                        <i class="bi bi-dot"></i> SQL, MySQL, PostgreSQL, BigQuery<br>
-
-                        <i class="bi bi-code-square _FB8500"></i> Languages & Tools: <br>
-                        <i class="bi bi-dot"></i>Python, PyCharm, VS Code, Jupyter, GiHub, Docker<br>
-
-                        <i class="bi bi-robot _FB8500"></i> Machine Learning: <br>
-                        <i class="bi bi-dot"></i> Applied Machine Learning
-                    </p>
-
-                    <h6>KNOWLEDGE & SKILLS</h6>
-                    <p>
-                        <i class="bi bi-bar-chart-line _FB8500"></i> Technical: <br>
-                        <i class="bi bi-dot"></i> Data Collection, Query Writing, Data Cleaning, Data Analysis,
-                        Analytics, EDA, Dashboard, Business Intelligence (BI), Visualization <br>
-
-                        <i class="bi bi-bar-chart-line _FB8500"></i> Non-technical: <br>
-                        <i class="bi bi-dot"></i> Problem Solving, Insight Generation, Communication, Project
-                        Management, Presentation
-                    </p>
-                </div>
-
-            </div>
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
 
             <!-- Main content -->
             <div class="col-lg-9 col-md-8">
@@ -191,9 +119,8 @@
         </div>
     </main>
 
-    <footer id="footer">
-       <i class="bi bi-c-circle"></i> 2023 Data Fukuro <img src="/images/happyface.png" alt="Logo" width="30" height="30"> Eugene Popov
-    </footer>
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">

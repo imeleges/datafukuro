@@ -14,26 +14,28 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+    
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="align-items-center">
-            <a class="logo" href="/index.html"><img class="logo_img" src="/images/logo.png" alt="Logo"> Data Fukuro</a>
-        </div>
-    
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-        </ul>
-    </header>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
 
     <main class="container-fluid under_construction_middle">
         <div class="row d-flex text-center">
