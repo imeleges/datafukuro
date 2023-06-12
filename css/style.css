@@ -158,6 +158,36 @@ h5 {
     line-height: 1.5;
 }
 
+.image-with-title {
+    position: relative;
+    text-align: center;
+}
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .image-title {
+        font-size: 30px;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-title {
+        font-size: 24px;
+        font-weight: normal;
+    }
+}
+
+
 .stats p{
     /* background: #202029; */
     text-align: center;
@@ -172,25 +202,77 @@ h5 {
 
 .row {
     --bs-gutter-x: 1rem;
-    --bs-gutter-y: 1rem;
+}
+
+.flex-equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .flex-equal-height .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-equal-height .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
 }
 
 .card {
     background: none;
     --bs-card-border-color: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-body {
     background: #202029;
+    flex: 1 1 auto;
+    padding: 1.25rem;
 }
 
 .card-body p {
     color: #e7e7e7;
     font-size: medium;
     margin-top: 1rem;
-    /* padding-left: 1rem;
-    padding-right: 1rem; */
 }
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #D9D9D9;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.card-footer a {
+    color:#202029;
+}
+
 
 .project-card {
     background: none;
@@ -258,4 +340,11 @@ h5 {
     background: #FB8500;
   }
 
+
+  /* Hiding collaps content when on a smaller screens */
+  @media (min-width: 768px) {
+    .toggle-control {
+      display: none;
+    }
+  }
   
