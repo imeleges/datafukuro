@@ -38,36 +38,72 @@
             <i class="bi bi-dot"></i> <i class="bi bi-github"></i> <a href="https://github.com/imeleges" alt="GitHub">GitHub</a>
         </p>
 
-        <h6>SPOKEN LANGUAGES</h6>
-        <p>
-            <i class="bi bi-translate _FB8500"></i> English <i class="bi bi-dot"></i> Russian
-        </p>
+        <div class="d-flex justify-content-center mb-3">
+            <!-- <button class="toggle-control d-md-none btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-content" aria-expanded="false" aria-controls="collapsible-content">
+                <i class="bi bi-hand-index"></i> to <i class="bi bi-arrows-expand"></i> more info
+            </button> -->
+            <label class="toggle-control d-md-none" type="label" data-bs-toggle="collapse" data-bs-target="#collapsible-content" aria-expanded="false" aria-controls="collapsible-content">
+                <i class="bi bi-three-dots"></i> tap to expand more info <i class="bi bi-three-dots"></i>
+            </label>
+        </div>
+        
+        <div id="collapsible-content">
+            <h6>SPOKEN LANGUAGES</h6>
+            <p>
+                <i class="bi bi-translate _FB8500"></i> English <i class="bi bi-dot"></i> Russian
+            </p>
 
-        <h6>TECH STACK & SOFTWARE</h6>
-        <p>
-            <i class="bi bi-bar-chart-line _FB8500"></i> Data Visualization: <br>
-            <i class="bi bi-dot"></i> Tableau, Superset, Looker Studio, PowerBI, Excel, Google Sheets, Apple
-            Numbers<br>
+            <h6>TECH STACK & SOFTWARE</h6>
+            <p>
+                <i class="bi bi-bar-chart-line _FB8500"></i> Data Visualization: <br>
+                <i class="bi bi-dot"></i> Tableau, Superset, Looker Studio, PowerBI, Excel, Google Sheets, Apple
+                Numbers<br>
 
-            <i class="bi bi-database _FB8500"></i> Database Management: <br>
-            <i class="bi bi-dot"></i> SQL, MySQL, PostgreSQL, BigQuery<br>
+                <i class="bi bi-database _FB8500"></i> Database Management: <br>
+                <i class="bi bi-dot"></i> SQL, MySQL, PostgreSQL, BigQuery<br>
 
-            <i class="bi bi-code-square _FB8500"></i> Languages & Tools: <br>
-            <i class="bi bi-dot"></i>Python, PyCharm, VS Code, Jupyter, GiHub, Docker<br>
+                <i class="bi bi-code-square _FB8500"></i> Languages & Tools: <br>
+                <i class="bi bi-dot"></i>Python, PyCharm, VS Code, Jupyter, GiHub, Docker<br>
 
-            <i class="bi bi-robot _FB8500"></i> Machine Learning: <br>
-            <i class="bi bi-dot"></i> Applied Machine Learning
-        </p>
+                <i class="bi bi-robot _FB8500"></i> Machine Learning: <br>
+                <i class="bi bi-dot"></i> Applied Machine Learning
+            </p>
 
-        <h6>KNOWLEDGE & SKILLS</h6>
-        <p>
-            <i class="bi bi-bar-chart-line _FB8500"></i> Technical: <br>
-            <i class="bi bi-dot"></i> Data Collection, Query Writing, Data Cleaning, Data Analysis,
-            Analytics, EDA, Dashboard, Business Intelligence (BI), Visualization <br>
+            <h6>KNOWLEDGE & SKILLS</h6>
+            <p>
+                <i class="bi bi-bar-chart-line _FB8500"></i> Technical: <br>
+                <i class="bi bi-dot"></i> Data Collection, Query Writing, Data Cleaning, Data Analysis,
+                Analytics, EDA, Dashboard, Business Intelligence (BI), Visualization <br>
 
-            <i class="bi bi-bar-chart-line _FB8500"></i> Non-technical: <br>
-            <i class="bi bi-dot"></i> Problem Solving, Insight Generation, Communication, Project
-            Management, Presentation
-        </p>
+                <i class="bi bi-bar-chart-line _FB8500"></i> Non-technical: <br>
+                <i class="bi bi-dot"></i> Problem Solving, Insight Generation, Communication, Project
+                Management, Presentation
+            </p>
+        </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function(){
+    function checkCollapse() {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            $('#collapsible-content').addClass('collapse');
+        } else {
+            $('#collapsible-content').removeClass('collapse show');
+        }
+    }
+    
+    checkCollapse();
+    
+    $(window).resize(function() {
+        checkCollapse();
+    });
+
+    $('#collapsible-content').on('show.bs.collapse', function () {
+        $('.toggle-control').html('<i class="bi bi-three-dots"></i> tap to hide info <i class="bi bi-three-dots"></i>');
+    })
+    $('#collapsible-content').on('hide.bs.collapse', function () {
+        $('.toggle-control').html('<i class="bi bi-three-dots"></i> tap to expand more info <i class="bi bi-three-dots"></i>');
+    })
+});
+</script>
