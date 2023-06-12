@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | Projects</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro">
+    <meta property="og:description" content="DA/DS portfolio website, featuring various data analysis projects.">
+    <meta property="og:image" content="https://datafukuro.com/images/logo.png">
+    <meta property="og:url" content="https://datafukuro.com/projects.html">
+    <meta property="og:type" content="website">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.get("/navbar.html", function (data) {
+                $("#navbar").replaceWith(data);
+            });
+
+            $.get("/sidebar.html", function (data) {
+                $("#sidebar").replaceWith(data);
+            });
+
+            $.get("/footer.html", function (data) {
+                $("#footer").replaceWith(data);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image with title -->
+                <div class="image-with-title">
+                    <img src="/images/banner_70.png" class="img-fluid mb-3" alt="Image">
+                    <h1 class="image-title"><i class="bi bi-folder"></i> Projects</h1>
+                </div>
+
+                <!-- Main content blocks -->
+                <div class="row g-0 flex-equal-height">
+                    <!-- Card template, copy and paste then edit -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card">
+                            <a href="#"><img src="/images/project_example_bar.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Lorem Ipsum</a></h5>
+                                <p class="card-text">
+                                    Laborum reprehenderit debitis sed. Quia porro excepturi vitae molestias et quasi minima. Sunt architecto non voluptatibus veritatis repellat ab consequatur at. Exercitationem mollitia minima quas maiores sed officia. Eveniet quia qui deleniti laboriosam sint sint. Voluptas natus optio explicabo.
+                                </p>
+                            </div>
+                            <a href="#" class="card-footer">
+                                <i class="bi bi-file-earmark-post"></i> <small>Go to the project >>></small>
+                            </a> 
+                        </div>
+                    </div> -->
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card">
+                            <a href="/projects/dtl/dtl_project.html"><img src="/projects/dtl/dtl_projectcover.png"
+                                    class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="/projects/dtl/dtl_project.html">Dubai Tenancy Lookup</a>
+                                </h5>
+                                <p class="card-text">
+                                    Dubai Tenancy Lookup is a Python and Streamlit app that utilizes open data
+                                    from the Dubai Land Department to provide renters in the Marsa Dubai area
+                                    with property information, rental price history, and comparisons to similar
+                                    properties in the same building.
+                                </p>
+                            </div>
+                            <a href="/projects/dtl/dtl_project.html" class="card-footer">
+                                <i class="bi bi-file-earmark-post"></i> <small>Go to the project >>></small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card">
+                            <a href="/projects/29blvd/29blvd_project.html"><img
+                                    src="/projects/29blvd/29blvd_projectcover.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="/projects/29blvd/29blvd_project.html">29 Burj Dubai
+                                        Boulevard</a></h5>
+                                <p class="card-text">
+                                    This project showcases a visualisation of 29 BD BLVD, built on data from the Dubai
+                                    Land Department. It features an interactive, user-friendly dashboard hosted on
+                                    Tableau's public server. It gives details about complex towers and a clear
+                                    description of the project by EMAAR PROPERTIES.
+                                </p>
+                            </div>
+                            <a href="/projects/29blvd/29blvd_project.html" class="card-footer">
+                                <i class="bi bi-file-earmark-post"></i> <small>Go to the project >>></small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card">
+                            <a href="#"><img src="/projects/rema_dubai/remadubai_projectcover.png" class="card-img-top"
+                                    alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">REMA Dubai</a></h5>
+                                <p class="card-text">
+                                    REMA Dubai is a real estate market analysis project that includes a Tableau
+                                    visualization dashboard based on a dataset of over 4,800 rental listings in Dubai's
+                                    Downtown and DIFC areas. The dashboard features color-coded apartments by room type,
+                                    median prices, and various features such as AC and furnishings.
+                                </p>
+                            </div>
+                            <a href="#" class="card-footer">
+                                <i class="bi bi-file-earmark-post"></i> <small>Go to the project >>></small>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card">
+                            <a href="#"><img src="/projects/uae_population/uaepopulation_projectcover.png"
+                                    class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">UAE Population</a></h5>
+                                <p class="card-text">
+                                    The UAE Population project is a Tableau-based visualization dashboard that displays
+                                    the population of the United Arab Emirates from 1960 to 2021 by gender and age
+                                    group, based on data from the United Nations World Population Prospects.
+                                </p>
+                            </div>
+                            <a href="#" class="card-footer">
+                                <i class="bi bi-file-earmark-post"></i> <small>Go to the project >>></small>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
