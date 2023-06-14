@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | Project NAME"> <!--CHANGE THIS THEN DELETE THE COMMENT-->
+    <meta property="og:description" content="PROJECT Description"> <!--CHANGE THIS THEN DELETE THE COMMENT-->
+    <meta property="og:image" content="https://datafukuro.com/projects/dtl/dtl.png"> <!--CHANGE THIS THEN DELETE THE COMMENT-->
+    <meta property="og:url" content="https://datafukuro.com/projects/dtl/dtl_project.html"> <!--CHANGE THIS THEN DELETE THE COMMENT-->
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    PROJECT_NAME
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/images/project_example_bar.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-link-45deg prj-icon"></i><a href="#"
+                                                target="_blank" rel="noopener">Project Online Link</a></span><br>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="#"
+                                                target="_blank" rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            PROJECT_DATE
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            PROJECT_TAGS
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            This project aims to create a mobile application that connects fitness enthusiasts with certified personal trainers. Users can access a wide range of fitness programs, track their progress, and receive personalized coaching from professional trainers.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                The mobile application will feature a user-friendly interface that allows users to easily navigate through various fitness programs and select the ones that align with their goals and preferences. Each program will be designed by certified personal trainers and will consist of a combination of workouts, nutrition plans, and progress tracking features. Users will have access to detailed exercise instructions, videos, and recommended meal plans tailored to their specific needs.
+                                            </p>
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/images/project_example_bar.png" class="img-fluid"
+                                                                alt="IMAGE_1_DESCRIPTION">
+                                                            <figcaption class="figure-caption">
+                                                                IMAGE_1_DESCRIPTION
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/images/project_example_bar.png" class="img-fluid"
+                                                                alt="IMAGE_2_DESCRIPTION">
+                                                            <figcaption class="figure-caption">
+                                                                IMAGE_2_DESCRIPTION
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                To enhance the user experience, the app will incorporate gamification elements to keep users engaged and motivated. Users will earn rewards and unlock achievements as they complete workouts, reach milestones, and consistently follow their fitness plans. The app will also include a social community feature where users can connect with fellow fitness enthusiasts, share their progress, and provide support and encouragement to each other.
+                                            </p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/images/project_example_bar.png" class="img-fluid"
+                                                                alt="IMAGE_3_DESCRIPTION">
+                                                            <figcaption class="figure-caption">
+                                                                IMAGE_3_DESCRIPTION
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/images/project_example_bar.png" class="img-fluid"
+                                                                alt="IMAGE_4_DESCRIPTION">
+                                                            <figcaption class="figure-caption">
+                                                                IMAGE_4_DESCRIPTION
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                In summary, this project aims to develop a comprehensive fitness application that provides users with access to a wide range of personalized fitness programs, workout instructions, nutrition plans, and progress tracking features. With a user-friendly interface, gamification elements, and a supportive social community, the app will empower individuals to achieve their fitness goals and maintain a healthy lifestyle.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
