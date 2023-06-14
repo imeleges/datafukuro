@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+h5 a {
+    color: #fff;
+}
+
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -202,6 +206,7 @@ h5 {
 
 .row {
     --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
 }
 
 .flex-equal-height {

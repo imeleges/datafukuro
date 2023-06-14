@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | REMA Dubai Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | REMA Dubai Dashboard">
+    <meta property="og:description" content="The REMA Dubai Dashboard is a real estate market analysis project that includes a Tableau visualization dashboard based on a dataset of over 4,800 rental listings in Dubai's Downtown and DIFC areas.">
+    <meta property="og:image" content="https://datafukuro.com/projects/rema_dubai_dashboard/remadubai_dashboard_projectcover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/rema_dubai_dashboard/rema_dubai_dashboard.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    REMA Dubai Dashboard
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/rema_dubai_dashboard/remadubai_dashboard_projectcover.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-link-45deg prj-icon"></i><a href="https://public.tableau.com/app/profile/eugenepopov/viz/REMA_Dubai/Dashboard2"
+                                                target="_blank" rel="noopener">REMA Dubai on Tableau</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            December 2022
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data analysis, Exploratory Data Analysis, Data Visualization, Dashboard, Dubai Rental Market, Tableau
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            The REMA Dubai Dashboard is a real estate market analysis project that includes a Tableau
+                                            visualization dashboard based on a dataset of over 4,800 rental listings in Dubai's
+                                            Downtown and DIFC areas. The dashboard features color-coded apartments by room type,
+                                            median prices, and various features such as AC and furnishings.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                At the core of the dashboard, the apartments are color-coded by room type, enabling users to swiftly identify the distribution of studio apartments, one-bedroom, two-bedroom apartments, and beyond. This feature enhances the user's understanding of the rental landscape, giving them a snapshot of the type of accommodations available in these areas.
+                                            </p>
+
+                                            <p>
+                                                Moreover, the dashboard presents detailed statistics on the median prices of these apartments. It's not just about the room numbers; the dashboard goes a step further by revealing the influence of various features on these prices. With a focus on amenities such as air conditioning and furnishings, users can ascertain how these elements contribute to the overall rental price, thus aiding their decision-making process.
+                                            </p>
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/rema_dubai_dashboard/rema_dubai_1.png" class="img-fluid"
+                                                                alt="Color-coded by room type">
+                                                            <figcaption class="figure-caption">
+                                                                Color-coded by room type
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/rema_dubai_dashboard/rema_dubai_2.png" class="img-fluid"
+                                                                alt="Geospatial dimensions">
+                                                            <figcaption class="figure-caption">
+                                                                Geospatial dimensions
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <p>
+                                                Adding a geospatial dimension to the data, the dashboard also showcases an interactive map of buildings in the Downtown and DIFC districts. The locations of these buildings are marked, providing users with a spatial context of the Dubai rental market. This feature is particularly useful for those unfamiliar with Dubai's geography or for those interested in proximity to landmarks or facilities.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
