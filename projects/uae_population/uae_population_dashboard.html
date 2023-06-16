@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | The UAE Population Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | The UAE Population Dashboard">
+    <meta property="og:description" content="The UAE Population Dashboard is a Tableau-based tool, showcasing the population dynamics of the United Arab Emirates (UAE) from 1960 to 2021, segmented by age and gender."> 
+    <meta property="og:image" content="https://datafukuro.com/projects/uae_population/uaepopulation_projectcover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/uae_population/uae_population_dashboard.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    The UAE Population Dashboard
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/uae_population/uaepopulation_tableau.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-link-45deg prj-icon"></i><a href="https://public.tableau.com/app/profile/eugenepopov/viz/UAEPopulation_16726611554180/Dashboard"
+                                                target="_blank" rel="noopener">Project on Tableau</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            January 2023
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data Visualization, Tableau, Demographic Analysis, Interactive Charts, Population Study
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            The UAE Population Dashboard is a Tableau-based tool, showcasing the population dynamics of the United Arab Emirates (UAE) from 1960 to 2021, segmented by age and gender.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                The UAE Population Dashboard, utilizes the power of Tableau to represent population data from the United Nations World Population Prospects in an interactive format. The dashboard hosts a main chart that displays total population statistics, using a de facto definition of population, counting all residents irrespective of their legal status or citizenship. 
+                                            </p>
+
+                                            <p>
+                                                This main chart offers interactivity that allows users to adjust the year range to view data across different time frames. The representation of genders is facilitated through two distinct colors, making visual comparison and understanding seamless.
+                                            </p>
+
+                                            <p>
+                                                Additional charts located at the bottom of the dashboard segment the population into three age groups: 0-14 years, 15-64 years, and 65+. These line charts provide an at-a-glance overview of population trends across different age groups over the chosen time frame.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
