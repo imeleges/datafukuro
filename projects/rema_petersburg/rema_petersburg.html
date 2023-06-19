@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | REMA St. Petersburg</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | REMA St. Petersburg"> 
+    <meta property="og:description" content="This project takes a deep dive into the apartment listings of St. Petersburg using data from Yandex.Real Estate service. It aims to shed light on real estate market trends and property pricing."> 
+    <meta property="og:image" content="https://datafukuro.com/projects/rema_petersburg/rema_peterburg_cover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/rema_petersburg/rema_petersburg.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    REMA (Real Estate Market Analysis) St. Petersburg, Russia
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/rema_petersburg/rema_peterburg_cover.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="https://github.com/imeleges/YPDS_Projects/tree/main/PROJ_02"
+                                                target="_blank" rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            December 2021
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data Analysis, Data Cleaning, Anomaly Detection, Fraud Prevention, Python, Pandas, Jupyter Notebook, NumPy, Matplotlib, Seaborn
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            This project takes a deep dive into the apartment listings of St. Petersburg using data from Yandex.Real Estate service. It aims to shed light on real estate market trends and property pricing.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                Utilizing a large dataset from Yandex.Real Estate service, this project provides an in-depth exploration of apartment listings in St. Petersburg, Russia.
+                                            </p>
+                                            <p>
+                                                The dataset of 23,699 rows, 22 columns and had some missing values, which required cleaning and processing for accuracy. Through this process, a few thousand rows that were less useful were eliminated, such as records with missing data for key fields like living area, kitchen area, and locality name.
+                                            </p>
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/rema_petersburg/output_3.png" class="img-fluid"
+                                                                alt="Price dependency on distance from the city center">
+                                                            <figcaption class="figure-caption">
+                                                                Price dependency on distance from the city center
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/rema_petersburg/output.png" class="img-fluid"
+                                                                alt="Total areas of apartments, m²">
+                                                            <figcaption class="figure-caption">
+                                                                Total areas of apartments, m²
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                With this refined dataset, I calculated critical parameters, such as price per square meter, and categorized properties by the floor type. Also extracted data related to the day of the week, month, and year a property was listed. This information helped identify market trends and key factors influencing property prices.
+                                            </p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/rema_petersburg/output_1.png" class="img-fluid"
+                                                                alt="Influence of the day of the week on price and number of listings">
+                                                            <figcaption class="figure-caption">
+                                                                Influence of the day of the week on price and number of listings
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/rema_petersburg/output_2.png" class="img-fluid"
+                                                                alt="Influence of the month on price and number of listings">
+                                                            <figcaption class="figure-caption">
+                                                                Influence of the month on price and number of listings
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                Further analysis revealed key determinants of property pricing, such as the property's total area and its proximity to the city center. This understanding of St. Petersburg's real estate market can be a valuable for prospective buyers, real estate professionals, and help to determine anomalies that might indicate fraud.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
