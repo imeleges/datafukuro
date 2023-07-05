@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | Video Game Success Patterns</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | Video Game Success Patterns"> 
+    <meta property="og:description" content="Main task for this projct is to identify patterns that determine the success of video games for an online store selling computer games globally. Understanding these patterns would allow the store to invest in potentially popular products and plan their advertising campaigns for the upcoming year, considering the relevancy of the data at hand."> 
+    <meta property="og:image" content="https://datafukuro.com/projects/vgsp/vgsp_projectcover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/vgsp/vgsp_project.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    Video Game Success Patterns
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/vgsp/vgsp_projectcover.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="https://github.com/imeleges/YPDS_Projects/blob/main/PROJ_04/determining_game_success_patterns.ipynb"
+                                                target="_blank" rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            January 2022
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Success Patterns, Gaming Platforms, Data Analysis, Investment Strategy, Advertising Campaign, Python, Pandas, Jupyter Notebook, NumPy, Data Visualization
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            Main task for this projct is to identify patterns that determine the success of video games for an online store selling computer games globally. Understanding these patterns would allow the store to invest in potentially popular products and plan their advertising campaigns for the upcoming year, considering the relevancy of the data at hand.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                Accessible historical data includes game sales, user and expert ratings, game genres, and platforms (such as Xbox or PlayStation).
+                                                The dataset includes the abbreviation ESRB (Entertainment Software Rating Board), an organization that sets age ratings for computer games. The ESRB evaluates game content and assigns it an appropriate age category, such as <b>E - Everyone</b>, <b>T - Teen</b>, <b>M - Mature 17+</b>
+                                            </p>
+                                            <p>
+                                                A lot of work and analysis has been done to identify the patterns that determine a game's success. The success of a game depends on various factors that should be considered collectively, as individually, these factors could be anomalies or outliers.
+                                            </p>
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/vgsp/esrb_rating_sales_impact.png" class="img-fluid"
+                                                                alt="Influence of ESRB rating on sales">
+                                                            <figcaption class="figure-caption">
+                                                                Influence of ESRB rating on sales
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/vgsp/user_rating_sales_chart.png" class="img-fluid"
+                                                                alt="Sales chart by user rating">
+                                                            <figcaption class="figure-caption">
+                                                                Sales chart by user rating
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                Critics' ratings are significantly more important than user ratings, which is especially evident in the American and European markets. However, in Japan, the difference in influence between the two is considerably smaller.
+                                            </p>
+                                            <p>
+                                                The active usage of gaming platforms lasts approximately 3-5 years, after which their relevance declines. This should be taken into account when ordering new games. The "lifespan" of a gaming platform is associated with technological development and the emergence of new platforms. However, for instance, the PC platform serves not only for gaming but primarily as a personal computer, it has a larger user base and its "lifespan" will be significantly longer for new games.
+                                            </p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/vgsp/genre_sales_chart_15m.png" class="img-fluid"
+                                                                alt="Sales chart by game genres, up to 15 million copies">
+                                                            <figcaption class="figure-caption">
+                                                                Sales chart by game genres, up to 15 million copies
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/vgsp/platform_game_sales.png" class="img-fluid"
+                                                                alt="Sales of million copies of games for platforms ">
+                                                            <figcaption class="figure-caption">
+                                                                Sales of million copies of games for platforms 
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                In conclusion, for ordering new games for the next year, suggestion for the platforms worth investing in are X360, PS3, the new PS4, XOne, and perhaps PC. As for genres, Action, Shooter, Sports, Role-Playing, and Misc are recommended. Considering the Japanese market, the Fighting genre should be looked into.
+                                            </p>
+                                            <p>
+                                                Regarding other platforms and genres, it would be wise to focus on individual games with high critic ratings. As shown with the example of Wii Sports for the Wii platform, anomalously high performance games can significantly skew perceptions of a certain genre or platform.
+                                            </p>
+                                            <p> 
+                                                The acquired data, charts, and conclusions should be enough to invest in potentially popular products and plan advertising campaigns.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
