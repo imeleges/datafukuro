@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | Customer Churn Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | Customer Churn Prediction">
+    <meta property="og:description" content="By analysing customer behaviour data, the project applies ML techniques to identify customers who are likely to leave the bank. Creating a model on predicting customer churn using comprehensive data analysis and machine learning techniques helping to come up with plans to keep them."> 
+    <meta property="og:image" content="https://datafukuro.com/projects/customer_churn_prediction/ccp_projectcover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/customer_churn_prediction/ccp_projectcover.png">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    Customer Churn Prediction
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/customer_churn_prediction/ccp_projectcover.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="https://github.com/imeleges/YPDS_Projects/tree/main/PROJ_06"
+                                                target="_blank" rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            February 2022
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data analysis, Categorization, Machine Learning, Customer Churn, Predictive Modeling, Exploratory Data Analysis, Python, Pandas, Jupyter Notebook, NumPy, Matplotlib, Seaborn, scikit-learn
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            By analysing customer behaviour data, the project applies ML techniques to identify customers who are likely to leave the bank. Creating a model on predicting customer churn using comprehensive data analysis and machine learning techniques helping to come up with plans to keep them.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                The project begins with an exploratory data analysis (EDA) of the customer data, providing insights into various features and their potential relationships with customer churn. Next, the project proceeds with data preprocessing, involving data cleaning, handling missing values, and categorizing variables.
+                                            </p>
+
+                                            <p>
+                                                Various machine learning models, including logistic regression, random forest, and gradient boosting, are trained and evaluated. The models' performance is compared using metrics like accuracy, precision, recall, and F1-score. The project concludes by selecting the best model based on the evaluation metrics and discussing potential strategies for customer retention.
+                                            </p>
+
+                                            <p>
+                                                The project successfully predicts customer churn using machine learning models, providing with valuable insights to potentially improve customer retention. The exploratory data analysis, comprehensive preprocessing, and careful model selection all contribute to the project's success. The results obtained could help in strategizing customer retention policies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
