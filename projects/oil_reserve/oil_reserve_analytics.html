@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | Oil Reserve Analytics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | Oil Reserve Analytics">
+    <meta property="og:description" content="In this project, machine learning and statistical analysis are used to identify the optimal region for the development of new oil wells, based on potential profit and risk assessments. This analysis provides a robust foundation for strategic decision-making in oil extraction."> 
+    <meta property="og:image" content="https://datafukuro.com/projects/oil_reserve/oil_reserve_projectcover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/oil_reserve/oil_reserve_analytics.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    Oil Reserve Analytics
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/oil_reserve/oil_reserve_projectcover.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="https://github.com/imeleges/YPDS_Projects/tree/main/PROJ_07"
+                                                target="_blank" rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            March 2022
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data Analysis, Machine Learning, Linear Regression, Bootstrap Analysis, Risk Analysis, Python, Pandas, NumPy, Scikit-Learn, Jupyter Notebook
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            In this project, machine learning and statistical analysis are used to identify the optimal region for the development of new oil wells, based on potential profit and risk assessments. This analysis provides a robust foundation for strategic decision-making in oil extraction.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                The initial phase of the project involved data collection from three different regions, focusing on the characteristics of oil samples from wells, such as the quality and volume of oil reserves. Using this information, a machine learning model employing linear regression was trained to predict the volume of reserves in new wells, helping to identify the regions with the highest potential total profit.
+                                            </p>
+
+                                            <p>
+                                                The potential profit and associated risks were assessed using bootstrap techniques, providing a comprehensive understanding of the potential outcomes from developing oil wells in each region.
+                                            </p>
+                                            
+                                            <p>
+                                                Following the analysis of data from the three regions, the training of linear regression models, and the evaluation of potential profits and risks, a specific region was chosen for the development of the oil field. This region yielded the highest average revenue per well and had only a 1% chance of incurring a loss, indicating a favorable return on investment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
