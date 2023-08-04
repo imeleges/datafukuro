@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | Gold Recovery Ratio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | Gold Recovery Ratio">
+    <meta property="og:description" content="This project aims to develop a machine learning model to predict the gold recovery rate from gold ore. The model will help optimize production processes and avoid running operations with unprofitable characteristics.">
+    <meta property="og:image" content="https://datafukuro.com/projects/gold_recovery/gold_recovery.png"> 
+    <meta property="og:url" content="https://datafukuro.com/projects/gold_recovery/gold_recovery.html"> 
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script> 
+        $(function(){
+        $.get("/navbar.html", function(data) {
+            $("#navbar").replaceWith(data);
+        });
+
+        $.get("/sidebar.html", function(data) {
+            $("#sidebar").replaceWith(data);
+        });
+
+        $.get("/footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    Gold Recovery Ratio from Gold Ore
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/gold_recovery/gold_recovery.png" class="img-fluid mb-3 project-img-cover"
+                                            width="800" alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="https://github.com/imeleges/YPDS_Projects/tree/main/PROJ_08"
+                                                target="_blank" rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            March 2022
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data Analysis, Data Preparation, EDA, ML, Cross-Validation, sMAPE, Python, Pandas, Matplotlib, Numpy, Seaborn, Scikit-learn, Jupyter Notebook
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            This project aims to develop a machine learning model to predict the gold recovery rate from gold ore. The model will help optimize production processes and avoid running operations with unprofitable characteristics.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                The project is divided into three main sections:
+                                                    <ul>
+                                                        <li>Data Preparation</li>
+                                                        <li>Exploratory Data Analysis</li>
+                                                        <li>Model Building and Training</li>
+                                                    </ul>
+                                            </p>
+                                            <p>    
+                                                The Data Preparation stage involves cleaning and preparing the data for subsequent analysis. The Exploratory Data Analysis stage includes investigating the concentration of metals at various purification stages, comparing the distribution of raw material grain sizes across training and test datasets, and investigating the total concentration of substances at different stages.
+                                            </p>
+
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/gold_recovery/au.png" class="img-fluid"
+                                                                alt="Concentration of Au (Gold) at different stages of purification">
+                                                            <figcaption class="figure-caption">
+                                                                Concentration of Au (Gold) at different stages of purification
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/gold_recovery/ag.png" class="img-fluid"
+                                                                alt="Concentration of Ag (Silver) at different stages of purification">
+                                                            <figcaption class="figure-caption">
+                                                                Concentration of Ag (Silver) at different stages of purification
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                In the Model Building and Training stage, several machine learning models, including Linear Regression, Decision Tree, and Random Forest, are evaluated. The Symmetric Mean Absolute Percentage Error (sMAPE) is used as the evaluation metric. Hyperparameters for these models are tuned using grid search and cross-validation.
+                                            </p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/gold_recovery/pb.png" class="img-fluid"
+                                                                alt="Concentration of Pb (Lead) at different stages of purification">
+                                                            <figcaption class="figure-caption">
+                                                                Concentration of Pb (Lead) at different stages of purification
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 text-center">
+                                                        <figure class="figure">
+                                                            <img src="/projects/gold_recovery/all.png" class="img-fluid"
+                                                                alt="Total concentration of all substances at different stages">
+                                                            <figcaption class="figure-caption">
+                                                                Total concentration of all substances at different stages
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>
+                                                The RandomForestRegressor model delivers the best performance on the training set, with an sMAPE score of 10.334961%. On the test set, this model achieves an sMAPE score of 11.583625%, which is comparable to the performance of the simple model. However, the LinearRegression model achieves a slightly better result with 11.062478% on the test set.
+                                            </p>
+                                            <p>
+                                                Despite this, the recommendation is retaining the RandomForestRegressor model as it provides a good balance between complexity and performance.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
