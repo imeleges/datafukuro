@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fukuro | Forecasting Taxi Orders</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph Protocol (OGP) tags -->
+    <meta property="og:title" content="Data Fukuro | Forecasting Taxi Orders">
+    <meta property="og:description"
+        content="The taxi company is leveraging historical data on taxi orders at airports. The objective is to create a model capable of predicting the number of taxi orders for the forthcoming hour. The model's performance is evaluated based on the RMSE metric, aiming for a value no greater than 48 on the test set.">
+    <meta property="og:image" content="https://datafukuro.com/projects/forecasting_taxi_orders/forecasting_taxi_orders_projectcover.png">
+    <meta property="og:url" content="https://datafukuro.com/projects/forecasting_taxi_orders/forecasting_taxi_orders.html">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.get("/navbar.html", function (data) {
+                $("#navbar").replaceWith(data);
+            });
+
+            $.get("/sidebar.html", function (data) {
+                $("#sidebar").replaceWith(data);
+            });
+
+            $.get("/footer.html", function (data) {
+                $("#footer").replaceWith(data);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <section id="navbar"></section> <!-- This will be replaced wuth navbar -->
+
+    <main class="container-fluid">
+        <div class="row">
+            <section id="sidebar"></section> <!-- This will be replaced with sidebar -->
+
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Image at top -->
+                <img src="/images/lowpoly_banner_1500x50.png" class="img-fluid mb-3" alt="Image">
+
+                <!-- Main content blocks -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="project-card">
+                            <div class="project-card-body">
+                                <h3>
+                                    Forecasting Taxi Orders
+                                </h3>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="/projects/forecasting_taxi_orders/forecasting_taxi_orders_projectcover.png"
+                                            class="img-fluid mb-3 project-img-cover" width="800"
+                                            alt="Project Main Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <h5>Project details</h5>
+                                        <span><i class="bi bi-github prj-icon"></i><a href="https://github.com/imeleges/YPDS_Projects/tree/main/PROJ_11" target="_blank"
+                                                rel="noopener">Project Github Repository</a></span><br>
+                                        <span><i class="bi bi-calendar3 prj-icon"></i>
+                                            May 2022
+                                        </span><br>
+                                        <span><i class="bi bi-tags-fill prj-icon"></i>
+                                            Data analysis, ML, Time series forecasting, Data visualization, Model
+                                            evaluation, Data resampling, Python, Pandas, Matplotlib, Sklearn, Linear
+                                            Regression, Decision Tree Regressor, Random Forest Regressor
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h5>Brief description</h5>
+                                        <p>
+                                            The taxi company is leveraging historical data on taxi orders at airports.
+                                            The objective is to create a model capable of predicting the number of taxi
+                                            orders for the forthcoming hour. The model's performance is evaluated based
+                                            on the RMSE metric, aiming for a value no greater than 48 on the test set.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Description</h4>
+                                            <p>
+                                                <strong>Data Preparation:</strong> The project starts with the reading
+                                                of the data file and transforming the datetime information. The dataset
+                                                comprises two columns: datetime and num_orders. The data is then
+                                                resampled hourly.
+                                            </p>
+
+                                            <p>
+                                                <strong>Data Analysis:</strong> A thorough analysis of the data is
+                                                performed. The number of taxi orders demonstrates a daily seasonality
+                                                pattern. Taxi orders peak at midnight and dip at 6 a.m. This pattern
+                                                might be influenced by the limited availability of public transportation
+                                                during late hours.
+                                            </p>
+
+                                            <p>
+                                                <strong>Model Training and Testing:</strong> New features like calendar
+                                                attributes, lagged values, and rolling mean are introduced in the
+                                                dataset. Multiple models including Linear Regression, Decision Tree
+                                                Regressor, and Random Forest Regressor are trained and evaluated based
+                                                on the RMSE metric.
+                                            </p>
+
+                                            <p>
+                                                At the end of the research, several models were evaluated. The results are summarized in the table:
+                                                <div class="table-responsive">
+                                                    <table class="table table-dark table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Model name</th>
+                                                                <th scope="col">RMSE Test</th>
+                                                                <th scope="col">RMSE Train</th>
+                                                                <th scope="col">Depth</th>
+                                                                <th scope="col">EST</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>LinearRegression</td>
+                                                                <td>53.51571051157058</td>
+                                                                <td>30.22368381335574</td>
+                                                                <td>----</td>
+                                                                <td>----</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DecisionTreeRegressor</td>
+                                                                <td>48.08733972353548</td>
+                                                                <td>13.849317412647133</td>
+                                                                <td>11</td>
+                                                                <td>----</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>RandomForestRegressor</td>
+                                                                <td>43.80042268131265</td>
+                                                                <td>8.658164216422168</td>
+                                                                <td>19</td>
+                                                                <td>95</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                The models DecisionTreeRegressor and RandomForestRegressor showed satisfactory prediction quality.
+                                            </p>
+
+                                            <p>
+                                                However, the RandomForestRegressor appeared as the better model for both the training and test datasets. This was achieved after hyperparameter tuning. The final model is a RandomForestRegressor with hyperparameters n_estimators = 95 and max_depth = 19, resulting in an RMSE = 43.80042268131265.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+
+        </div>
+    </main>
+
+    <section id="footer"></section> <!-- This will be replaced wuth footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <!-- Initialize the Bootstrap tooltip plugin -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
